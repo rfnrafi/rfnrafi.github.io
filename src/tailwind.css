@@ -1,0 +1,265 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  @apply box-border;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  all: unset;
+  @apply cursor-pointer;
+}
+
+body {
+  background: url(/asset/pattern/ripples.png);
+}
+
+/* REUSABLE */
+
+.btn {
+  all: unset;
+  @apply px-3 py-2 rounded-2xl bg-primary text-white uppercase font-bold cursor-pointer hover:bg-red-700 duration-300;
+}
+.content {
+  @apply mx-auto px-3;
+  max-width: 1300px;
+}
+.pageline {
+  @apply mx-auto rounded-xl xl:w-full h-2 bg-gray-500 block;
+  width: calc(100% - 2.5rem);
+  @apply xl:w-full;
+}
+/* NAVBAR */
+.navbar {
+  @apply mx-auto container px-3 flex gap-3 justify-between lg:justify-center items-center w-full text-lg h-16 font-semibold;
+}
+
+.nav-logo {
+  @apply text-red-500;
+}
+
+.nav-menu {
+  @apply flex items-center justify-center;
+}
+
+.nav-item {
+  @apply hidden lg:block px-3;
+  max-width: 100%;
+}
+
+.nav-button {
+  all: unset;
+  @apply flex flex-col gap-1 w-6 cursor-pointer lg:hidden;
+}
+
+.nav-button span {
+  @apply bg-black rounded-lg;
+  width: 100%;
+  height: 2px;
+}
+
+/* HERO */
+.hero {
+  @apply relative pt-2;
+  height: calc(100vh - 4rem);
+}
+.hero span {
+  @apply font-semibold text-gray-500;
+  letter-spacing: 0.435em;
+}
+.hero h2 {
+  @apply text-4xl lg:text-5xl font-bold;
+  letter-spacing: 0.175em;
+}
+.hero .btn {
+  @apply my-3;
+}
+.hero .wave {
+  @apply w-full h-1/3 absolute bottom-0;
+  background: url(/asset/image/wave1.svg);
+  background-position: center;
+  background-size: cover;
+  z-index: -2;
+}
+.hero img {
+  @apply absolute right-0 -bottom-16 max-w-full h-full;
+  z-index: -1;
+}
+
+/* ABOUT US */
+.about {
+  @apply min-h-screen text-white bg-primary flex items-center justify-center;
+}
+.about .content {
+  @apply flex flex-col lg:flex-row gap-5 justify-center items-center;
+}
+.about h1 {
+  @apply text-4xl lg:text-7xl;
+}
+
+.about img {
+  @apply w-3/5 lg:w-1/4 h-auto;
+}
+
+/* DANCE */
+.gradient1 {
+  @apply w-full;
+  background: linear-gradient(180deg, #f03737 0%, #171d30 100%);
+  height: 300px;
+}
+
+.dance {
+  @apply text-white min-h-screen;
+  background-color: #171d30;
+}
+.dance .header {
+  @apply relative w-full h-auto lg:flex items-center justify-evenly;
+}
+.dance .dance-image {
+  @apply w-full lg:w-1/2 relative;
+}
+.dance .dance-image img {
+  @apply w-full h-auto;
+}
+.dance .dance-image .gradient {
+  @apply absolute top-0 w-full h-full;
+  background: radial-gradient(
+    50% 67.79% at 50% 59.98%,
+    rgba(23, 29, 48, 0) 0%,
+    #171d30 100%
+  );
+}
+.dance .header .text {
+  @apply text-white uppercase text-4xl absolute lg:static bottom-0 ml-5 mb-3 flex items-start justify-start;
+  line-height: 3rem;
+}
+.dance .header .text .line {
+  @apply bg-primary;
+  width: 10px;
+  margin-top: 0.5rem;
+  min-height: 150px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+/* MANGA */
+.manga {
+ @apply mx-auto text-white pt-10;
+ background-color: #171d30;
+}
+.manga .heading {
+ @apply w-full  py-7;
+}
+.manga .heading .manga-image {
+ @apply relative mx-auto w-auto flex justify-center items-center ;
+}
+.manga .heading .manga-image .circle-1{
+ @apply absolute rounded-full bg-gray-300  ;
+ border-radius: 50%;
+ width: 45%;
+ height: auto;
+ padding-top: 45%;
+ top: 5%;
+ left: 25%;
+}
+.manga .heading .manga-image .circle-2{
+ @apply absolute rounded-full bg-black ;
+ border-radius: 50%;
+ width: 45%;
+ height: auto;
+ padding-top: 45%;
+ bottom: 5%;
+ right: 25%;
+
+}
+.manga .heading .manga-image img {
+ @apply w-3/5 h-auto ;
+
+ z-index: 1;
+}
+.manga .heading .manga-image .text {
+  @apply absolute font-bold;
+  font-size: 5.5vw;
+  line-height: 6vw;
+  left: 15%;
+  z-index: 2;
+}
+.manga .description {
+  @apply mt-3;
+}
+
+/* BUDAYA */
+.gradient2 {
+  @apply w-full;
+  background: linear-gradient(180deg, #171D30 0%, #001A17 100%);
+  height: 300px;
+}
+.budaya {
+  @apply relative text-white;
+}
+
+.budaya .heading {
+  @apply absolute top-0 w-full h-auto font-bold flex items-center justify-evenly gap-20 text-3xl sm:text-4xl lg:text-6xl;
+  padding-top: 25%;
+}
+ .budaya-img {
+  @apply  w-full;
+  z-index: -1;
+}
+.budaya .heading div {
+  @apply flex justify-center items-center gap-5;
+}
+.budaya .description {
+  @apply relative w-full;
+  background : url(/asset/image/budaya-bg.png);
+  background-size: cover;
+  background-position: top;
+}
+
+.budaya .description .top {
+  @apply absolute ;
+top: -12px;
+}
+.budaya .description .line {
+  @apply w-full h-3 ;
+  background-color: #494C45;
+}
+.budaya .content {
+  @apply py-5;
+}
+
+/* BAHASA */
+
+.bahasa {
+  @apply min-h-screen text-white;
+  background-color: #615C43;
+
+}
+.bahasa .heading {
+  @apply relative w-full h-auto lg:flex items-center justify-between;
+  background-color: #615C43;
+}
+.bahasa .heading .bahasa-image {
+  @apply w-full lg:w-1/2 relative;
+}
+.bahasa .heading .bahasa-image img {
+  @apply w-full h-auto;
+}
+.bahasa .heading .bahasa-image .fade {
+  @apply absolute top-0 h-full w-full ;
+  background: linear-gradient(180deg, rgba(255, 241, 241, 0) 60%, #615C43 100%);
+}
+.bahasa .heading .bahasa-image .fade2 {
+  @apply absolute top-0 h-full w-full hidden sm:block ;
+  background: linear-gradient(90deg, rgba(255, 241, 241, 0) 60%, #615C43 100%);
+}
+
+.bahasa .heading .text {
+  @apply absolute  sm:static font-bold text-5xl sm:text-7xl text-left flex justify-center items-center text-white w-1/2;
+  bottom: 10%;
+  left: 8%;
+}
+
+.bahasa .content {
+  @apply pt-10;
+}

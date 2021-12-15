@@ -1,0 +1,639 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+body {
+  background: url(/asset/pattern/ripples.png);
+}
+
+/* REUSABLE */
+
+.btn {
+  all: unset;
+  cursor: pointer;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(240, 55, 55, var(--tw-bg-opacity));
+}
+
+.btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
+}
+
+.btn {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  transition-duration: 300ms;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  max-width: 1300px;
+}
+
+.pageline {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 0.5rem;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+}
+
+@media (min-width: 1280px) {
+  .pageline {
+    width: 100%;
+  }
+}
+
+.pageline {
+  width: calc(100% - 2.5rem);
+}
+
+@media (min-width: 1280px) {
+  .pageline {
+    width: 100%;
+  }
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .navbar {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navbar {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .navbar {
+    max-width: 1536px;
+  }
+}
+
+.navbar {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+
+.nav-logo {
+  --tw-text-opacity: 1;
+  color: rgba(239, 68, 68, var(--tw-text-opacity));
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+  display: none;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+  .nav-item {
+    display: block;
+  }
+}
+
+.nav-item {
+  max-width: 100%;
+}
+
+.nav-button {
+  all: unset;
+  display: flex;
+  width: 1.5rem;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  .nav-button {
+    display: none;
+  }
+}
+
+.nav-button span {
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  width: 100%;
+  height: 2px;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  padding-top: 0.5rem;
+  height: calc(100vh - 4rem);
+}
+
+.hero span {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+  letter-spacing: 0.435em;
+}
+
+.hero h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .hero h2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.hero h2 {
+  letter-spacing: 0.175em;
+}
+
+.hero .btn {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero .wave {
+  position: absolute;
+  bottom: 0px;
+  height: 33.333333%;
+  width: 100%;
+  background: url(/asset/image/wave1.svg);
+  background-position: center;
+  background-size: cover;
+  z-index: -2;
+}
+
+.hero img {
+  position: absolute;
+  right: 0px;
+  bottom: -4rem;
+  height: 100%;
+  max-width: 100%;
+  z-index: -1;
+}
+
+/* ABOUT US */
+
+.about {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgba(240, 55, 55, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.about .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .about .content {
+    flex-direction: row;
+  }
+}
+
+.about h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .about h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+.about img {
+  height: auto;
+  width: 60%;
+}
+
+@media (min-width: 1024px) {
+  .about img {
+    width: 25%;
+  }
+}
+
+/* DANCE */
+
+.gradient1 {
+  width: 100%;
+  background: linear-gradient(180deg, #f03737 0%, #171d30 100%);
+  height: 300px;
+}
+
+.dance {
+  min-height: 100vh;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  background-color: #171d30;
+}
+
+.dance .header {
+  position: relative;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 1024px) {
+  .dance .header {
+    display: flex;
+  }
+}
+
+.dance .dance-image {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .dance .dance-image {
+    width: 50%;
+  }
+}
+
+.dance .dance-image img {
+  height: auto;
+  width: 100%;
+}
+
+.dance .dance-image .gradient {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(
+    50% 67.79% at 50% 59.98%,
+    rgba(23, 29, 48, 0) 0%,
+    #171d30 100%
+  );
+}
+
+.dance .header .text {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 0.75rem;
+  margin-left: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .dance .header .text {
+    position: static;
+  }
+}
+
+.dance .header .text {
+  line-height: 3rem;
+}
+
+.dance .header .text .line {
+  --tw-bg-opacity: 1;
+  background-color: rgba(240, 55, 55, var(--tw-bg-opacity));
+  width: 10px;
+  margin-top: 0.5rem;
+  min-height: 150px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+/* MANGA */
+
+.manga {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  background-color: #171d30;
+}
+
+.manga .heading {
+  width: 100%;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.manga .heading .manga-image {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.manga .heading .manga-image .circle-1{
+  position: absolute;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+  border-radius: 50%;
+  width: 45%;
+  height: auto;
+  padding-top: 45%;
+  top: 5%;
+  left: 25%;
+}
+
+.manga .heading .manga-image .circle-2{
+  position: absolute;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  border-radius: 50%;
+  width: 45%;
+  height: auto;
+  padding-top: 45%;
+  bottom: 5%;
+  right: 25%;
+}
+
+.manga .heading .manga-image img {
+  height: auto;
+  width: 60%;
+  z-index: 1;
+}
+
+.manga .heading .manga-image .text {
+  position: absolute;
+  font-weight: 700;
+  font-size: 5.5vw;
+  line-height: 6vw;
+  left: 15%;
+  z-index: 2;
+}
+
+.manga .description {
+  margin-top: 0.75rem;
+}
+
+/* BUDAYA */
+
+.gradient2 {
+  width: 100%;
+  background: linear-gradient(180deg, #171D30 0%, #001A17 100%);
+  height: 300px;
+}
+
+.budaya {
+  position: relative;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.budaya .heading {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .budaya .heading {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .budaya .heading {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+.budaya .heading {
+  padding-top: 25%;
+}
+
+.budaya-img {
+  width: 100%;
+  z-index: -1;
+}
+
+.budaya .heading div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.budaya .description {
+  position: relative;
+  width: 100%;
+  background : url(/asset/image/budaya-bg.png);
+  background-size: cover;
+  background-position: top;
+}
+
+.budaya .description .top {
+  position: absolute;
+  top: -12px;
+}
+
+.budaya .description .line {
+  height: 0.75rem;
+  width: 100%;
+  background-color: #494C45;
+}
+
+.budaya .content {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+/* BAHASA */
+
+.bahasa {
+  min-height: 100vh;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  background-color: #615C43;
+}
+
+.bahasa .heading {
+  position: relative;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .bahasa .heading {
+    display: flex;
+  }
+}
+
+.bahasa .heading {
+  background-color: #615C43;
+}
+
+.bahasa .heading .bahasa-image {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .bahasa .heading .bahasa-image {
+    width: 50%;
+  }
+}
+
+.bahasa .heading .bahasa-image img {
+  height: auto;
+  width: 100%;
+}
+
+.bahasa .heading .bahasa-image .fade {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 241, 241, 0) 60%, #615C43 100%);
+}
+
+.bahasa .heading .bahasa-image .fade2 {
+  position: absolute;
+  top: 0px;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .bahasa .heading .bahasa-image .fade2 {
+    display: block;
+  }
+}
+
+.bahasa .heading .bahasa-image .fade2 {
+  background: linear-gradient(90deg, rgba(255, 241, 241, 0) 60%, #615C43 100%);
+}
+
+.bahasa .heading .text {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .bahasa .heading .text {
+    position: static;
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+.bahasa .heading .text {
+  bottom: 10%;
+  left: 8%;
+}
+
+.bahasa .content {
+  padding-top: 2.5rem;
+}

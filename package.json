@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "global": "^4.4.0",
+    "postcss": "^8.4.1",
+    "tailwindcss": "^2.2.19"
+  },
+  "scripts": {
+    "css": "tailwindcss -i src/tailwind.css -o style.css -w"
+  }
+}

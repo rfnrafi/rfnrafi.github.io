@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav>
+      <div class="navbar">
+        <div class="nav-logo">
+          <span>SUZURAN</span>
+        </div>
+        <div class="nav-menu">
+          <div class="nav-item"><a href="">About Us</a></div>
+          <div class="nav-item"><a href="">Dance</a></div>
+          <div class="nav-item"><a href="">Manga</a></div>
+          <div class="nav-item"><a href="">Budaya</a></div>
+          <div class="nav-item"><a href="">Bahasa</a></div>
+          <div class="nav-item"><a href="">Contact</a></div>
+        </div>
+
+          <button class="nav-button"></buttonclass>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+      </div>
+    </nav>
+    <!-- ========== HERO ========== -->
+    <article>
+      <section class="hero">
+        <div class="content">
+
+          <span>JAPANESE CLUB 16 BANDUNG</span>
+          <h2>Ketahuin Semua Tentang Jepang <br>
+            Bersama 
+            Kami</h2>
+            <button class="btn">Bergabung</button>
+        </div>
+          <div class="wave">
+          </div>
+          <img src="/asset/image/temple.png" alt="">
+      </section>
+      <section class="about">
+        <div class="content">
+          <h1>Tentang Kita</h1>
+          <img src="/asset/image/suzuranlogo.png" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, reprehenderit obcaecati! Est velit accusantium quos iusto at cupiditate illum itaque corrupti ipsa ad porro inventore aliquid non dignissimos reprehenderit perferendis deleniti, mollitia dolores eum enim voluptatibus! Quaerat tenetur id omnis excepturi. Voluptas iure laudantium quia nostrum illum dolorem, minima cumque.</p>
+        </div>
+      </section>
+	<!-- ========== DANCE ========== -->
+      <div class="gradient1"></div>
+      <section class="dance">
+        <div class="header content">
+          <div class="dance-image">
+            <div class="gradient"></div>
+            <img src="/asset//image/dance.png">
+          </img>
+          </div>
+          <div class="text">
+            <div class="line"></div>
+            <h1>Kami <br> Memiliki <br> Grup <br> Dance</h1>
+          </div>
+        </div>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident molestias, eveniet explicabo maxime pariatur itaque hic ducimus magni distinctio porro, eaque corrupti quia consectetur! Dolorem distinctio consequuntur aperiam perferendis maxime sed. Illo excepturi nemo veniam optio? Fugit quos ad nesciunt mollitia aut voluptatibus facere, quas earum ipsa, dolorem pariatur maxime. Molestias quo officiis voluptatem amet vero optio eligendi ducimus incidunt beatae et in ut eaque officia alias libero quia molestiae laborum nisi excepturi vitae, culpa fugiat. Vel incidunt, aperiam pariatur esse ab sed minus sapiente nulla iste, delectus consectetur. Accusamus optio, impedit exercitationem, suscipit quibusdam sint natus commodi nulla at sunt eaque velit necessitatibus ullam iste blanditiis perspiciatis! Nostrum aliquam excepturi commodi exercitationem iusto voluptate, alias sequi natus doloremque debitis quas nisi, dolores reiciendis nulla laudantium. Cupiditate, accusamus. Aut illo nulla ipsa, quos adipisci officiis, eius fugit incidunt dolore reprehenderit quisquam repellendus sapiente placeat animi mollitia esse alias velit ex.</p>
+        </div>
+      </section>
+	<!-- ========== MANGA ========== -->
+	<section classname="manga">
+		<div classname="pageline content"></div>	
+		<div classname="heading">
+			<div classname="manga-image">
+				<div classname="circle-1></div>
+				<div classname="circle-2></div>
+				<img src=""></img>
+				<div classname="text">
+				</div>
+			</div>
+		</div>
+		<div classname="description content">
+		</div>
+		<div classname="pageline content"></div>	
+	</section>
+	<!-- ========== BUDAYA ========== -->
+	<section classname="budaya">
+		<div classname="heading">
+		<div classname="budaya-image></div>
+		</div>
+	</section>
+    </article>
+  </body>
+</html>
