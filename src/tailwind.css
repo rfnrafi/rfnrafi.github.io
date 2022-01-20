@@ -22,7 +22,7 @@ body {
 }
 .content {
   @apply mx-auto px-3;
-  max-width: 1300px;
+  max-width: 1140px;
 }
 .pageline {
   @apply mx-auto rounded-xl xl:w-full h-2 bg-gray-500 block;
@@ -31,7 +31,7 @@ body {
 }
 /* NAVBAR */
 .navbar {
-  @apply mx-auto container px-3 flex gap-3 justify-between lg:justify-center items-center w-full text-lg h-16 font-semibold;
+  @apply relative mx-auto container px-3 flex gap-3 justify-between lg:justify-center items-center w-full text-lg h-16 font-semibold;
 }
 
 .nav-logo {
@@ -39,11 +39,24 @@ body {
 }
 
 .nav-menu {
-  @apply flex items-center justify-center;
+  @apply lg:flex items-center justify-center  duration-300;
+  
+
+}
+@media (max-width:1024px){
+  .nav-menu {
+    @apply absolute pb-16;
+    top: -400px;
+  }
+}
+.nav-menu-toogle {
+  background: url(/asset/pattern/ripples.png);
+  z-index: 1;
+  @apply top-16 w-full gap-8 ;
 }
 
 .nav-item {
-  @apply hidden lg:block px-3;
+  @apply lg:block px-3;
   max-width: 100%;
 }
 
@@ -64,11 +77,11 @@ body {
   height: calc(100vh - 4rem);
 }
 .hero span {
-  @apply font-semibold text-gray-500;
+  @apply text-sm font-semibold text-gray-500;
   letter-spacing: 0.435em;
 }
 .hero h2 {
-  @apply text-4xl lg:text-5xl font-bold;
+  @apply  text-2xl sm:text-4xl lg:text-5xl font-bold;
   letter-spacing: 0.175em;
 }
 .hero .btn {
@@ -81,11 +94,17 @@ body {
   background-size: cover;
   z-index: -2;
 }
+@media screen and (max-width : 600px) {
+  .hero img {
+    min-height: 200px;
+    max-height: 450px;
+  }
+}
 .hero img {
-  @apply absolute right-0 -bottom-16 max-w-full h-full;
+
+  @apply absolute right-0 -bottom-16 max-w-full sm:h-full;
   z-index: -1;
 }
-
 /* ABOUT US */
 .about {
   @apply min-h-screen text-white bg-primary flex items-center justify-center;
@@ -130,14 +149,13 @@ body {
   );
 }
 .dance .header .text {
-  @apply text-white uppercase text-4xl absolute lg:static bottom-0 ml-5 mb-3 flex items-start justify-start;
-  line-height: 3rem;
+  @apply text-white uppercase text-2xl sm:text-4xl absolute lg:static bottom-0 ml-5 mb-3 flex items-start justify-start;
 }
 .dance .header .text .line {
   @apply bg-primary;
   width: 10px;
   margin-top: 0.5rem;
-  min-height: 150px;
+  min-height: 110px;
   border-radius: 20px;
   margin-right: 10px;
 }
@@ -211,19 +229,27 @@ body {
 }
 .budaya .description {
   @apply relative w-full;
-  background : url(/asset/image/budaya-bg.png);
+  background : #494C45;
   background-size: cover;
   background-position: top;
 }
 
 .budaya .description .top {
-  @apply absolute ;
-top: -12px;
-}
-.budaya .description .line {
-  @apply w-full h-3 ;
+  @apply absolute -top-12;
+  @apply w-full h-14 ;
+  border-top-left-radius: 100% 50%;
+  border-top-right-radius: 100% 110%;
   background-color: #494C45;
 }
+.budaya .description .bottom {
+  @apply absolute -bottom-12;
+  @apply w-full h-14 ;
+  border-bottom-left-radius: 100% 110%;
+  border-bottom-right-radius: 100% 200%;
+  background-color: #494C45;
+  z-index: 1;
+}
+
 .budaya .content {
   @apply py-5;
 }
@@ -262,4 +288,41 @@ top: -12px;
 
 .bahasa .content {
   @apply pt-10;
+}
+
+
+/* SOCIAL MEDIA */
+.social-media {
+  @apply w-full min-h-screen pt-10 text-white;
+  background-color: #615C43;
+}
+.social-media h1 {
+  @apply text-4xl lg:text-7xl;
+}
+
+.social-media img {
+  @apply w-3/5 lg:w-1/4 h-auto mx-auto;
+}
+.social-media .content {
+  @apply w-full flex justify-center items-center flex-col gap-10;
+}
+.social-media .contact {
+  @apply flex justify-center items-center flex-col gap-10;
+}
+
+.social-media .contact .sc {
+  @apply flex items-start justify-center flex-col gap-5;
+}
+.social-media .contact .sc a {
+  @apply flex gap-4 items-center justify-center hover:text-gray-200 duration-300;
+}
+.social-media .contact .sc i,
+h3 {
+  @apply text-3xl;
+}
+
+
+/* FOOTER */
+.footer {
+  @apply flex justify-center items-center font-bold text-white bg-gray-900 h-16 w-full ;
 }
